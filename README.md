@@ -15,3 +15,8 @@ dest_lang: Desired language for the translated file
 
 ### Exemples
 `python3 ./translation.py ./input_en.txt en ./output_fr.txt fr`
+
+
+## Entity Extraction
+### Google Cloud Natural Language API
+The `GOOGLE_APPLICATION_CREDENTIALS` environment variable should point to a service account JSON keyfile.
