@@ -1,4 +1,5 @@
-from googletrans import Translator
+from translation.googletrans import Googletrans
+from translation.google_cloud_api import GoogleCloudAPI
 from extraction.google import GoogleEntityExtractor
 
 if __name__ == "__main__":
@@ -17,14 +18,26 @@ if __name__ == "__main__":
 
     print()
 
-    print('Translated text:')
-    translator = Translator()
-    translated_text = translator.translate(text, dest='en', src='auto').text
-    print(translated_text)
+    print('Translated text (googletrans) :')
+    translated_text_googletrans = Googletrans.translate(text, 'auto', 'en')
+    print(translated_text_googletrans)
 
     print()
 
-    print('Entity extracted from the translated text:')
-    entities = extractor.extract_entity(translated_text)
+    print('Translated text (Google Cloud API) :')
+    translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
+    print(translated_text_google_cloud_api)
+
+    print()
+
+    print('Entity extracted from the translated text (googletrans) :')
+    entities = extractor.extract_entity(translated_text_googletrans)
+    for entity in entities:
+        print(entity)
+
+    print()
+
+    print('Entity extracted from the translated text (Google Cloud API) :')
+    entities = extractor.extract_entity(translated_text_google_cloud_api)
     for entity in entities:
         print(entity)
