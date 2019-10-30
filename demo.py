@@ -1,5 +1,8 @@
 from translation.googletrans import Googletrans
-from translation.google_cloud_api import GoogleCloudAPI
+from translation.google_cloud import GoogleCloud
+from translation.azure_text import AzureText
+from translation.my_memory import MyMemory
+
 from extraction.google import GoogleEntityExtractor
 from extraction.dandelion import DandelionEntityExtractor
 
@@ -11,6 +14,7 @@ if __name__ == "__main__":
                 'à qui on demanda de réaliser la plus vaste et la plus belle église catholique d\'Amérique du Nord. O\'Donnell arriva à ' \
                 'Montréal en octobre 1823 et proposa un projet aux marguilliers qui l\'acceptèrent rapidement.'
 
+    # ----------- Original text ------------ #
     print('Original text:')
     print(text)
 
@@ -29,16 +33,18 @@ if __name__ == "__main__":
     entities = dandelion_entity_extractor.extract_entity(text)
     for entity in entities:
         print(entity)
+    # -------------------------------------- #
 
     print()
 
+    # ------------ googletrans ------------- #
     print('Translated text (googletrans):')
-    translated_text_googletrans = Googletrans.translate(text, 'auto', 'en')
+    translated_text_googletrans = Googletrans.translate(Googletrans, text, 'fr', 'en')
     print(translated_text_googletrans)
 
     print()
 
-    print('Entity extracted with Google from the translated text (googletrans):')
+    print('Entity extracted from the translated text (googletrans):')
     entities = google_entity_extractor.extract_entity(translated_text_googletrans)
     for entity in entities:
         print(entity)
@@ -49,23 +55,56 @@ if __name__ == "__main__":
     entities = dandelion_entity_extractor.extract_entity(translated_text_googletrans)
     for entity in entities:
         print(entity)
+    # -------------------------------------- #
 
     print()
 
-    print('Translated text (Google Cloud API):')
-    translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
-    print(translated_text_google_cloud_api)
+    # ------------ Google Cloud ------------ #
+    print('Translated text (Google Cloud):')
+    translated_text_google_cloud = GoogleCloud.translate(GoogleCloud, text, 'fr', 'en')
+    print(translated_text_google_cloud)
 
     print()
 
-    print('Entity extracted with Google from the translated text (Google Cloud API):')
-    entities = google_entity_extractor.extract_entity(translated_text_google_cloud_api)
+    print('Entity extracted with Google from the translated text (Google Cloud):')
+    entities = google_entity_extractor.extract_entity(translated_text_google_cloud)
     for entity in entities:
         print(entity)
 
     print()
 
-    print('Entity extracted with Dandelion from the translated text (Google Cloud API):')
-    entities = dandelion_entity_extractor.extract_entity(translated_text_google_cloud_api)
+    print('Entity extracted with Dandelion from the translated text (Google Cloud):')
+    entities = dandelion_entity_extractor.extract_entity(translated_text_google_cloud)
     for entity in entities:
         print(entity)
+    # -------------------------------------- #
+
+    print()
+
+    # ------------- Azure Text ------------- #
+    print('Translated text (Azure Text):')
+    translated_text_azure = AzureText.translate(AzureText, text, 'fr', 'en')
+    print(translated_text_azure)
+
+    print()
+
+    print('Entity extracted with Google from the translated text (Azure Text):')
+    entities = google_entity_extractor.extract_entity(translated_text_azure)
+    for entity in entities:
+        print(entity)
+    # -------------------------------------- #
+
+    print()
+
+    # -------------- MyMemory -------------- #
+    print('Translated text (MyMemory):')
+    translated_text_mymemory = MyMemory.translate(MyMemory, text, 'fr', 'en')
+    print(translated_text_mymemory)
+
+    print()
+
+    print('Entity extracted with Google from the translated text (MyMemory):')
+    entities = google_entity_extractor.extract_entity(translated_text_mymemory)
+    for entity in entities:
+        print(entity)
+    # -------------------------------------- #
