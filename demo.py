@@ -1,10 +1,10 @@
+from extraction.google import GoogleEntityExtractor
+from extraction.dandelion import DandelionEntityExtractor
+
 from translation.googletrans import Googletrans
 from translation.google_cloud import GoogleCloud
 from translation.azure_text import AzureText
 from translation.my_memory import MyMemory
-
-from extraction.google import GoogleEntityExtractor
-from extraction.dandelion import DandelionEntityExtractor
 
 if __name__ == "__main__":
     text = 'La première église Notre-Dame fut construite à partir de 1672 sur un emplacement déterminé par Dollier de Casson, ' \
@@ -14,97 +14,39 @@ if __name__ == "__main__":
                 'à qui on demanda de réaliser la plus vaste et la plus belle église catholique d\'Amérique du Nord. O\'Donnell arriva à ' \
                 'Montréal en octobre 1823 et proposa un projet aux marguilliers qui l\'acceptèrent rapidement.'
 
-    # ----------- Original text ------------ #
-    print('Original text:')
-    print(text)
-
-    print()
-
-    google_entity_extractor = GoogleEntityExtractor()
-    print('Entity extracted with Google from the original text:')
-    entities = google_entity_extractor.extract_entity(text)
-    for entity in entities:
-        print(entity)
-
-    print()
-    
-    dandelion_entity_extractor = DandelionEntityExtractor()
-    print('Entity extracted with Dandelion from the original text:')
-    entities = dandelion_entity_extractor.extract_entity(text)
-    for entity in entities:
-        print(entity)
-    # -------------------------------------- #
-
-    print()
-
-    # ------------ googletrans ------------- #
-    print('Translated text (googletrans):')
+    # ----------- Translation ------------ #
     translated_text_googletrans = Googletrans.translate(Googletrans, text, 'fr', 'en')
-    print(translated_text_googletrans)
-
-    print()
-
-    print('Entity extracted from the translated text (googletrans):')
-    entities = google_entity_extractor.extract_entity(translated_text_googletrans)
-    for entity in entities:
-        print(entity)
-
-    print()
-
-    print('Entity extracted with Dandelion from the translated text (googletrans):')
-    entities = dandelion_entity_extractor.extract_entity(translated_text_googletrans)
-    for entity in entities:
-        print(entity)
-    # -------------------------------------- #
-
-    print()
-
-    # ------------ Google Cloud ------------ #
-    print('Translated text (Google Cloud):')
     translated_text_google_cloud = GoogleCloud.translate(GoogleCloud, text, 'fr', 'en')
-    print(translated_text_google_cloud)
-
-    print()
-
-    print('Entity extracted with Google from the translated text (Google Cloud):')
-    entities = google_entity_extractor.extract_entity(translated_text_google_cloud)
-    for entity in entities:
-        print(entity)
-
-    print()
-
-    print('Entity extracted with Dandelion from the translated text (Google Cloud):')
-    entities = dandelion_entity_extractor.extract_entity(translated_text_google_cloud)
-    for entity in entities:
-        print(entity)
-    # -------------------------------------- #
-
-    print()
-
-    # ------------- Azure Text ------------- #
-    print('Translated text (Azure Text):')
     translated_text_azure = AzureText.translate(AzureText, text, 'fr', 'en')
-    print(translated_text_azure)
-
-    print()
-
-    print('Entity extracted with Google from the translated text (Azure Text):')
-    entities = google_entity_extractor.extract_entity(translated_text_azure)
-    for entity in entities:
-        print(entity)
-    # -------------------------------------- #
-
-    print()
-
-    # -------------- MyMemory -------------- #
-    print('Translated text (MyMemory):')
     translated_text_mymemory = MyMemory.translate(MyMemory, text, 'fr', 'en')
-    print(translated_text_mymemory)
 
-    print()
+    texts = [
+        (None, text),
+        ("googletrans", translated_text_googletrans),
+        ("Google Cloud", translated_text_google_cloud),
+        ("Azure Text", translated_text_azure),
+        ("MyMemory", translated_text_mymemory),
+    ]
 
-    print('Entity extracted with Google from the translated text (MyMemory):')
-    entities = google_entity_extractor.extract_entity(translated_text_mymemory)
-    for entity in entities:
-        print(entity)
-    # -------------------------------------- #
+    # ----------- Extraction ------------ #
+    google_entity_extractor = GoogleEntityExtractor()
+    dandelion_entity_extractor = DandelionEntityExtractor()
+
+    extractors = [
+        ("Google", google_entity_extractor),
+        ("Dandelion", dandelion_entity_extractor),
+    ]
+
+    # ----------- Output ------------ #
+    for translator_name, text in texts:
+        text_name ='Original text:' if translator_name is None else (
+            f'Translated text ({translator_name})')
+        print(f'{text_name}:')
+        print(text, end='\n\n')
+        for extractor_name, extractor in extractors:
+            print(f'Entity extracted with {extractor_name} from the {text_name}:')
+            entities = extractor.extract_entity(text)
+            for entity in entities:
+                print(entity)
+            print()
+    
