@@ -5,10 +5,6 @@ from translation.my_memory import MyMemory
 
 from extraction.google import GoogleEntityExtractor
 
-import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/Users/frank/Google/Hercules-f7fc5c09aeb5.json"
-os.environ["TRANSLATOR_TEXT_SUBSCRIPTION_KEY"]="18dbb72b6fa24cf29bd29fa7c03a60a2"
-
 if __name__ == "__main__":
     text = 'La première église Notre-Dame fut construite à partir de 1672 sur un emplacement déterminé par Dollier de Casson, ' \
                 'dans l\'axe de la rue Notre-Dame sur l\'actuelle Place d\'Armes. Peu à peu l\'église ne suffit plus à répondre aux ' \
@@ -34,7 +30,7 @@ if __name__ == "__main__":
 
     # ------------ googletrans ------------- #
     print('Translated text (googletrans):')
-    translated_text_googletrans = Googletrans.translate(text, 'fr', 'en')
+    translated_text_googletrans = Googletrans.translate(Googletrans, text, 'fr', 'en')
     print(translated_text_googletrans)
 
     print()
@@ -49,7 +45,7 @@ if __name__ == "__main__":
 
     # ------------ Google Cloud ------------ #
     print('Translated text (Google Cloud):')
-    translated_text_google_cloud = GoogleCloud.translate(text, 'fr', 'en')
+    translated_text_google_cloud = GoogleCloud.translate(GoogleCloud, text, 'fr', 'en')
     print(translated_text_google_cloud)
 
     print()
@@ -64,7 +60,7 @@ if __name__ == "__main__":
 
     # ------------- Azure Text ------------- #
     print('Translated text (Azure Text):')
-    translated_text_azure = AzureText.translate(text, 'fr', 'en')
+    translated_text_azure = AzureText.translate(AzureText, text, 'fr', 'en')
     print(translated_text_azure)
 
     print()
@@ -79,7 +75,7 @@ if __name__ == "__main__":
 
     # -------------- MyMemory -------------- #
     print('Translated text (MyMemory):')
-    translated_text_mymemory = MyMemory.translate(text, 'fr', 'en')
+    translated_text_mymemory = MyMemory.translate(MyMemory, text, 'fr', 'en')
     print(translated_text_mymemory)
 
     print()

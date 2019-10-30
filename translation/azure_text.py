@@ -1,7 +1,8 @@
+from translation.base import Translation
 import os, requests, uuid, json
 
-class AzureText():
-    def translate(src_text, src_lang, dest_lang): 
+class AzureText(Translation):
+    def translate(self, src_text, src_lang, dest_lang): 
         key_var_name = 'TRANSLATOR_TEXT_SUBSCRIPTION_KEY'
         if not key_var_name in os.environ:
             raise Exception('Please set/export the environment variable: {}'.format(key_var_name))
