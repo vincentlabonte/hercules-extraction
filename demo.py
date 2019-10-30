@@ -1,6 +1,14 @@
 from translation.googletrans import Googletrans
 from translation.google_cloud_api import GoogleCloudAPI
+from translation.azure_text_translation_api import AzureTextTranslationAPI
+
 from extraction.google import GoogleEntityExtractor
+
+import html
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:/Users/fforg/Google/Hercules-f7fc5c09aeb5.json"
+os.environ["TRANSLATOR_TEXT_SUBSCRIPTION_KEY"]="18dbb72b6fa24cf29bd29fa7c03a60a2"
+os.environ["TRANSLATOR_TEXT_ENDPOINT"]="https://api-nam.cognitive.microsofttranslator.com/"
 
 if __name__ == "__main__":
     text = 'La première église Notre-Dame fut construite à partir de 1672 sur un emplacement déterminé par Dollier de Casson, ' \
@@ -31,7 +39,13 @@ if __name__ == "__main__":
 
     print('Translated text (Google Cloud API):')
     translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
-    print(translated_text_google_cloud_api)
+    print(html.unescape(translated_text_google_cloud_api))
+
+    print()
+
+    print('Translated text (Azure Text Translation API):')
+    translated_text_azure_translation_api = AzureTextTranslationAPI.translate(text, 'fr', 'en')
+    print(translated_text_azure_translation_api)
 
     print()
 
