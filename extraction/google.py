@@ -15,9 +15,9 @@ class GoogleEntityExtractor(EntityExtractor):
             document=document,
             encoding_type='UTF32'
         )
-        return GoogleEntityExtractor.__convert_entities(response.entities)
+        return self.__convert_entities(response.entities)
 
-    def __convert_entities(entities):
+    def __convert_entities(self, entities):
         converted_entities = []
         for entity in entities:
             entity_type = EntityType(entity.type)

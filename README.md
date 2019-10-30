@@ -24,7 +24,12 @@ dest_lang: Desired language for the translated file
 ## Entity Extraction
 ### Google Cloud Natural Language API
 The `GOOGLE_APPLICATION_CREDENTIALS` environment variable should point to a service account JSON keyfile.
-
-### Requirements
-Prior to run the entity extraction module, please ensure that these packages are installed:
+#### Requirements
+Please ensure that these packages are installed:
 - google-cloud-language : `pip install google-cloud-language`
+
+### Dandelion API
+The `DANDELION_TOKEN` environment variable should contain the token of the Dandelion API.
+#### Requirements
+Please ensure that these packages are installed:
+- dandelion-eu : `pip install dandelion-eu`

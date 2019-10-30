@@ -1,6 +1,7 @@
 from translation.googletrans import Googletrans
 from translation.google_cloud_api import GoogleCloudAPI
 from extraction.google import GoogleEntityExtractor
+from extraction.dandelion import DandelionEntityExtractor
 
 if __name__ == "__main__":
     text = 'La première église Notre-Dame fut construite à partir de 1672 sur un emplacement déterminé par Dollier de Casson, ' \
@@ -15,9 +16,17 @@ if __name__ == "__main__":
 
     print()
 
-    extractor = GoogleEntityExtractor()
-    print('Entity extracted from the original text:')
-    entities = extractor.extract_entity(text)
+    google_entity_extractor = GoogleEntityExtractor()
+    print('Entity extracted with Google from the original text:')
+    entities = google_entity_extractor.extract_entity(text)
+    for entity in entities:
+        print(entity)
+
+    print()
+    
+    dandelion_entity_extractor = DandelionEntityExtractor()
+    print('Entity extracted with Dandelion from the original text:')
+    entities = dandelion_entity_extractor.extract_entity(text)
     for entity in entities:
         print(entity)
 
@@ -29,20 +38,34 @@ if __name__ == "__main__":
 
     print()
 
+    print('Entity extracted with Google from the translated text (googletrans):')
+    entities = google_entity_extractor.extract_entity(translated_text_googletrans)
+    for entity in entities:
+        print(entity)
+
+    print()
+
+    print('Entity extracted with Dandelion from the translated text (googletrans):')
+    entities = dandelion_entity_extractor.extract_entity(translated_text_googletrans)
+    for entity in entities:
+        print(entity)
+
+    print()
+
     print('Translated text (Google Cloud API):')
     translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
     print(translated_text_google_cloud_api)
 
     print()
 
-    print('Entity extracted from the translated text (googletrans):')
-    entities = extractor.extract_entity(translated_text_googletrans)
+    print('Entity extracted with Google from the translated text (Google Cloud API):')
+    entities = google_entity_extractor.extract_entity(translated_text_google_cloud_api)
     for entity in entities:
         print(entity)
 
     print()
 
-    print('Entity extracted from the translated text (Google Cloud API):')
-    entities = extractor.extract_entity(translated_text_google_cloud_api)
+    print('Entity extracted with Dandelion from the translated text (Google Cloud API):')
+    entities = dandelion_entity_extractor.extract_entity(translated_text_google_cloud_api)
     for entity in entities:
         print(entity)
