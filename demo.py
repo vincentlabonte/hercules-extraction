@@ -1,10 +1,10 @@
 from translation.googletrans import Googletrans
-from translation.google_cloud_api import GoogleCloudAPI
-from translation.azure_text_translation_api import AzureTextTranslationAPI
+from translation.google_cloud import GoogleCloud
+from translation.azure_text import AzureText
+from translation.my_memory import MyMemory
 
 from extraction.google import GoogleEntityExtractor
 
-import html
 import os
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/Users/frank/Google/Hercules-f7fc5c09aeb5.json"
 os.environ["TRANSLATOR_TEXT_SUBSCRIPTION_KEY"]="18dbb72b6fa24cf29bd29fa7c03a60a2"
@@ -47,30 +47,45 @@ if __name__ == "__main__":
 
     print()
 
-    # ---------- Google Cloud API ---------- #
-    print('Translated text (Google Cloud API):')
-    translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
-    print(html.unescape(translated_text_google_cloud_api))
+    # ------------ Google Cloud ------------ #
+    print('Translated text (Google Cloud):')
+    translated_text_google_cloud = GoogleCloud.translate(text, 'fr', 'en')
+    print(translated_text_google_cloud)
 
     print()
 
-    print('Entity extracted from the translated text (Google Cloud API):')
-    entities = extractor.extract_entity(translated_text_google_cloud_api)
+    print('Entity extracted from the translated text (Google Cloud):')
+    entities = extractor.extract_entity(translated_text_google_cloud)
     for entity in entities:
         print(entity)
     # -------------------------------------- #
 
     print()
 
-    # ----- Azure Text Translation API ----- #
-    print('Translated text (Azure Text Translation API):')
-    translated_text_azure_translation_api = AzureTextTranslationAPI.translate(text, 'fr', 'en')
-    print(translated_text_azure_translation_api)
+    # ------------- Azure Text ------------- #
+    print('Translated text (Azure Text):')
+    translated_text_azure = AzureText.translate(text, 'fr', 'en')
+    print(translated_text_azure)
 
     print()
 
-    print('Entity extracted from the translated text (Azure Text Translation API):')
-    entities = extractor.extract_entity(translated_text_azure_translation_api)
+    print('Entity extracted from the translated text (Azure Text):')
+    entities = extractor.extract_entity(translated_text_azure)
+    for entity in entities:
+        print(entity)
+    # -------------------------------------- #
+
+    print()
+
+    # -------------- MyMemory -------------- #
+    print('Translated text (MyMemory):')
+    translated_text_mymemory = MyMemory.translate(text, 'fr', 'en')
+    print(translated_text_mymemory)
+
+    print()
+
+    print('Entity extracted from the translated text (MyMemory):')
+    entities = extractor.extract_entity(translated_text_mymemory)
     for entity in entities:
         print(entity)
     # -------------------------------------- #
