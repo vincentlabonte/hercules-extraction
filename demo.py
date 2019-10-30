@@ -6,9 +6,8 @@ from extraction.google import GoogleEntityExtractor
 
 import html
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="C:/Users/fforg/Google/Hercules-f7fc5c09aeb5.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/Users/frank/Google/Hercules-f7fc5c09aeb5.json"
 os.environ["TRANSLATOR_TEXT_SUBSCRIPTION_KEY"]="18dbb72b6fa24cf29bd29fa7c03a60a2"
-os.environ["TRANSLATOR_TEXT_ENDPOINT"]="https://api-nam.cognitive.microsofttranslator.com/"
 
 if __name__ == "__main__":
     text = 'La première église Notre-Dame fut construite à partir de 1672 sur un emplacement déterminé par Dollier de Casson, ' \
@@ -18,6 +17,7 @@ if __name__ == "__main__":
                 'à qui on demanda de réaliser la plus vaste et la plus belle église catholique d\'Amérique du Nord. O\'Donnell arriva à ' \
                 'Montréal en octobre 1823 et proposa un projet aux marguilliers qui l\'acceptèrent rapidement.'
 
+    # ----------- Original text ------------ #
     print('Original text:')
     print(text)
 
@@ -28,24 +28,14 @@ if __name__ == "__main__":
     entities = extractor.extract_entity(text)
     for entity in entities:
         print(entity)
+    # -------------------------------------- #
 
     print()
 
+    # ------------ googletrans ------------- #
     print('Translated text (googletrans):')
-    translated_text_googletrans = Googletrans.translate(text, 'auto', 'en')
+    translated_text_googletrans = Googletrans.translate(text, 'fr', 'en')
     print(translated_text_googletrans)
-
-    print()
-
-    print('Translated text (Google Cloud API):')
-    translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
-    print(html.unescape(translated_text_google_cloud_api))
-
-    print()
-
-    print('Translated text (Azure Text Translation API):')
-    translated_text_azure_translation_api = AzureTextTranslationAPI.translate(text, 'fr', 'en')
-    print(translated_text_azure_translation_api)
 
     print()
 
@@ -53,6 +43,14 @@ if __name__ == "__main__":
     entities = extractor.extract_entity(translated_text_googletrans)
     for entity in entities:
         print(entity)
+    # -------------------------------------- #
+
+    print()
+
+    # ---------- Google Cloud API ---------- #
+    print('Translated text (Google Cloud API):')
+    translated_text_google_cloud_api = GoogleCloudAPI.translate(text, 'fr', 'en')
+    print(html.unescape(translated_text_google_cloud_api))
 
     print()
 
@@ -60,3 +58,19 @@ if __name__ == "__main__":
     entities = extractor.extract_entity(translated_text_google_cloud_api)
     for entity in entities:
         print(entity)
+    # -------------------------------------- #
+
+    print()
+
+    # ----- Azure Text Translation API ----- #
+    print('Translated text (Azure Text Translation API):')
+    translated_text_azure_translation_api = AzureTextTranslationAPI.translate(text, 'fr', 'en')
+    print(translated_text_azure_translation_api)
+
+    print()
+
+    print('Entity extracted from the translated text (Azure Text Translation API):')
+    entities = extractor.extract_entity(translated_text_azure_translation_api)
+    for entity in entities:
+        print(entity)
+    # -------------------------------------- #
