@@ -1,0 +1,16 @@
+@prefix cidoccrm: <http://erlangen-crm.org/170309/> .
+@prefix hercules: <http://culture.gouv.qc.ca/entity/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://culture.gouv.qc.ca/entity/6506b812-7bb4-4fd7-9927-619b24c81335> a cidoccrm:E22_Man-Made_Object ;
+    rdfs:label "The Calling of Saint Matthew"@fr .
+
+<http://culture.gouv.qc.ca/entity/6a13cc7e-460a-4352-96a9-3231f8ebdfb2> a cidoccrm:E21_Person ;
+    rdfs:label "Michelangelo"@fr .
+
+hercules:c7956261-2eb9-43a8-a5e4-157155b0a706 a cidoccrm:E21_Person ;
+    rdfs:label "Georges Laraque"@fr .
+

@@ -1,0 +1,17 @@
+# Translation
+google-cloud-translate==2.0.0
+googletrans
+nltk
+
+# Coreference
+torch==1.3.1
+torchvision==0.4.2 -f https://download.pytorch.org/whl/torch_stable.html
+stanfordnlp
+pycorenlp
+
+# Export
+rdflib
+
+# Extraction
+google-cloud-language
+dandelion-eu

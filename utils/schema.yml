@@ -1,0 +1,67 @@
+type: object
+required:
+  - extraction
+  - export
+properties:
+  translation:
+    type: object
+    required:
+      - implementation
+      - language
+    properties:
+      implementation:
+        type: string
+        items:
+          enum:
+            - google
+            - googletrans
+            - mymemory
+            - azure
+      language:
+        type: object
+        required:
+          - text
+          - extraction
+        properties:
+          text:
+            type: string
+          extraction:
+            type: string
+  extraction:
+    type: object
+    required:
+      - implementation
+    properties:
+      implementation:
+        type: string
+        items:
+          enum:
+            - dandelion
+  coreference:
+    type: object
+    required:
+      - implementation
+    properties:
+      implementation:
+        type: string
+        items:
+          enum:
+            - stanford
+  export:
+    type: object
+    required:
+      - implementation
+    properties:
+      implementation:
+        type: string
+        items:
+          enum:
+            - cidoc_crm
+      language:
+        type: string
+        items:
+          enum:
+            - turtle
+      namespaces:
+        entity: http://culture.gouv.qc.ca/entity/
+        ontology: http://erlangen-crm.org/170309/

@@ -1,10 +1,10 @@
-from extraction.google import GoogleEntityExtractor
+#from extraction.google import GoogleEntityExtractor
 from extraction.dandelion import DandelionEntityExtractor
 
-from translation.googletrans import Googletrans
-from translation.google_cloud import GoogleCloud
-from translation.azure_text import AzureText
-from translation.my_memory import MyMemory
+from translation.googletrans import GoogletransTranslator
+from translation.google_cloud import GoogleCloudTranslator
+from translation.azure import AzureTranslator
+from translation.my_memory import MyMemoryTranslator
 
 if __name__ == "__main__":
     text = 'La première église Notre-Dame fut construite à partir de 1672 sur un emplacement déterminé par Dollier de Casson, ' \
@@ -15,10 +15,10 @@ if __name__ == "__main__":
                 'Montréal en octobre 1823 et proposa un projet aux marguilliers qui l\'acceptèrent rapidement.'
 
     # ----------- Translation ------------ #
-    translated_text_googletrans = Googletrans.translate(Googletrans, text, 'fr', 'en')
-    translated_text_google_cloud = GoogleCloud.translate(GoogleCloud, text, 'fr', 'en')
-    translated_text_azure = AzureText.translate(AzureText, text, 'fr', 'en')
-    translated_text_mymemory = MyMemory.translate(MyMemory, text, 'fr', 'en')
+    translated_text_googletrans = GoogletransTranslator.translate(GoogletransTranslator, text, 'fr', 'en')
+    translated_text_google_cloud = GoogleCloudTranslator.translate(GoogleCloudTranslator, text, 'fr', 'en')
+    translated_text_azure = AzureTranslator.translate(AzureTranslator, text, 'fr', 'en')
+    translated_text_mymemory = MyMemoryTranslator.translate(MyMemoryTranslator, text, 'fr', 'en')
 
     texts = [
         (None, text),
@@ -29,11 +29,11 @@ if __name__ == "__main__":
     ]
 
     # ----------- Extraction ------------ #
-    google_entity_extractor = GoogleEntityExtractor()
+    #google_entity_extractor = GoogleEntityExtractor()
     dandelion_entity_extractor = DandelionEntityExtractor()
 
     extractors = [
-        ("Google", google_entity_extractor),
+    #    ("Google", google_entity_extractor),
         ("Dandelion", dandelion_entity_extractor),
     ]
 
@@ -45,7 +45,7 @@ if __name__ == "__main__":
         print(text, end='\n\n')
         for extractor_name, extractor in extractors:
             print(f'Entity extracted with {extractor_name} from the {text_name}:')
-            entities = extractor.extract_entity(text)
+            entities = extractor.extract_entities(text)
             for entity in entities:
                 print(entity)
             print()
