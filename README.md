@@ -7,7 +7,7 @@ The different components of this program can be used in a Jupyter Notebook by ca
 ## Set Up
 
 To set up the program you must download the requirements by running:
-`pip install -r requirements.txt`
+`pip install -r requirements.txt -f https://download.pytorch.org/whl/torch_stable.html`
 
 Different components have different requirements see [Components](#components) for additional details.
 

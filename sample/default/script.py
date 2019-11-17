@@ -7,7 +7,7 @@ if __name__ == '__main__':
     text_path = dir_path / 'text.txt'
     exec_path = dir_path.parent.parent / 'hercules-extraction.py'
 
-    out_path = dir_path / 'default.ttl'
+    out_path = dir_path / 'default_sample.ttl'
 
     cp = subprocess.run(['python', str(exec_path), '--file', str(text_path), '--out', str(out_path)], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
 
