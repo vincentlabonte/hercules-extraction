@@ -1,7 +1,10 @@
-from translation.base import Translation
+from translation.base import Translator
 from googletrans import Translator
 
-class Googletrans(Translation):
+
+class GoogletransTranslator(Translator):
+    def __init__(self):
+        self.translator = Translator()
+
     def translate(self, src_text, src_lang, dest_lang):
-        translator = Translator()
-        return translator.translate(src_text, dest=dest_lang, src=src_lang).text
+        return self.translator.translate(src_text, dest=dest_lang, src=src_lang).text

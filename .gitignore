@@ -126,4 +126,4 @@ dmypy.json
 
 # Other
 .vscode/
-keys/
+setup/

@@ -1,0 +1,29 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://culture.gouv.qc.ca/entity/4eca30d2-24c3-4da0-8e9e-c1ce99b29337> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Irlande"@fr .
+
+<http://culture.gouv.qc.ca/entity/5e2aa9ab-564c-4dec-9610-baea932c4162> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Architecte"@fr .
+
+<http://culture.gouv.qc.ca/entity/699ff84e-5e3a-4c85-9a86-78f164ecb671> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "James O'Donnell"@fr .
+
+<http://culture.gouv.qc.ca/entity/77e1e94d-e828-4db1-807d-81fa227c2975> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Église catholique en Amérique du Nord"@fr .
+
+<http://culture.gouv.qc.ca/entity/90c1e52a-1920-4bd0-ad39-4e6a4b158b95> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Place d'Armes"@fr .
+
+<http://culture.gouv.qc.ca/entity/c55269e2-345a-469f-87d5-2eef9d4b2ee4> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Rue Notre-Dame"@fr .
+
+<http://culture.gouv.qc.ca/entity/dbe2bef3-cb44-4d14-aa9a-2621c2718639> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Paroisse"@fr .
+
+<http://culture.gouv.qc.ca/entity/ff35bc66-0988-46e3-9da9-94d3adee4377> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Montréal"@fr .
+

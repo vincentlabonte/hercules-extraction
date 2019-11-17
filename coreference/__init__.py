@@ -1,0 +1,3 @@
+import coreference.stanford
+
+StanfordCoreferenceResolver = stanford.StanfordCoreferenceResolver

@@ -1,0 +1,86 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://culture.gouv.qc.ca/entity/03d733e3-84d2-4092-ac61-dd14db15da27> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "usine"@fr .
+
+<http://culture.gouv.qc.ca/entity/092b035a-dddf-4383-b6ff-ca1f44b50625> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "axe"@fr .
+
+<http://culture.gouv.qc.ca/entity/1855cb84-a91d-4d8a-a1f5-01664a419048> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "population"@fr .
+
+<http://culture.gouv.qc.ca/entity/1bcd0183-40cb-4543-bad3-0f81147e9809> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "projet de construction"@fr .
+
+<http://culture.gouv.qc.ca/entity/233d7ee4-516a-4792-81a7-d9fe9a7dbb79> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "1672"@fr .
+
+<http://culture.gouv.qc.ca/entity/3746e10f-a1e1-488e-8ea3-b4128a371a86> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "New York"@fr .
+
+<http://culture.gouv.qc.ca/entity/4cb90cc8-64e8-4d3e-b946-7943ca6e2331> a <http://erlangen-crm.org/170309/E74_Group> ;
+    rdfs:label "paroisse"@fr .
+
+<http://culture.gouv.qc.ca/entity/569aef43-c11c-4e54-9862-2d1946a01609> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Place d'Armes"@fr .
+
+<http://culture.gouv.qc.ca/entity/6251c5b2-344f-4a1b-a730-5868c38cd991> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "architecte"@fr .
+
+<http://culture.gouv.qc.ca/entity/62c50231-21ef-4893-b4d7-3e59d4f495e6> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "1823"@fr .
+
+<http://culture.gouv.qc.ca/entity/659a06ea-2e5d-4568-aeb0-2a03e11b58a3> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "église"@fr .
+
+<http://culture.gouv.qc.ca/entity/88d18792-129b-44a2-8b33-9eb60ccb94b0> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "O'Donnell James"@fr .
+
+<http://culture.gouv.qc.ca/entity/8998f43f-d1ea-4de8-a7f4-80c5d0f6c1fd> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "irlandais"@fr .
+
+<http://culture.gouv.qc.ca/entity/8e11d6eb-e4d4-4fec-8eb8-4aa65b12aa34> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "emplacement"@fr .
+
+<http://culture.gouv.qc.ca/entity/a0445b59-85c5-49eb-9532-0ced2d9bb2f9> a <http://erlangen-crm.org/170309/E50_Date> ;
+    rdfs:label "1672"@fr .
+
+<http://culture.gouv.qc.ca/entity/a9af1e8c-5fc5-44c0-b12e-147261beea54> a <http://erlangen-crm.org/170309/E74_Group> ;
+    rdfs:label "Église catholique en Amérique du Nord"@fr .
+
+<http://culture.gouv.qc.ca/entity/b727c541-e860-4a52-9031-66f2825feae9> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "le plus grand"@fr .
+
+<http://culture.gouv.qc.ca/entity/b755c01a-aea8-458a-85f2-340b6793379d> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Besoins"@fr .
+
+<http://culture.gouv.qc.ca/entity/bd5b2e1f-a73b-4048-aca2-f533c2868cdc> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "construction"@fr .
+
+<http://culture.gouv.qc.ca/entity/bdda2f26-d077-4968-bf99-2d507183d7af> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "projet"@fr .
+
+<http://culture.gouv.qc.ca/entity/cbb4a432-3a40-4955-b237-08c4fdf30d40> a <http://erlangen-crm.org/170309/E74_Group> ;
+    rdfs:label "notre Dame"@fr .
+
+<http://culture.gouv.qc.ca/entity/d2e29dcf-318a-4d5c-8bf2-9c15d32ea84a> a <http://erlangen-crm.org/170309/E50_Date> ;
+    rdfs:label "octobre 1823"@fr .
+
+<http://culture.gouv.qc.ca/entity/d64ac8d7-6a57-4a24-8081-ca7376066ef0> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "gardiens"@fr .
+
+<http://culture.gouv.qc.ca/entity/dddf6b0d-6bed-4daf-8c2e-e5286e99671e> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Montréal"@fr .
+
+<http://culture.gouv.qc.ca/entity/debfe186-8614-4a6d-8130-12237733b473> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Eglise de Notre-Dame"@fr .
+
+<http://culture.gouv.qc.ca/entity/deef4ece-50eb-4043-85ca-731826d6a986> a <http://erlangen-crm.org/170309/E74_Group> ;
+    rdfs:label "église"@fr .
+
+<http://culture.gouv.qc.ca/entity/fb0caea4-b8e0-437a-bc25-2bb78c359c77> a <http://erlangen-crm.org/170309/E21_Person> ;
+    rdfs:label "Dollier de Casson"@fr .
+
