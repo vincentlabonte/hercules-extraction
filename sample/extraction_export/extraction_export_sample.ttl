@@ -1,0 +1,47 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://culture.gouv.qc.ca/entity/08691c94-129e-42ff-89ec-32c27ab868e6> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Notre-Dame Street West"@fr .
+
+<http://culture.gouv.qc.ca/entity/0bf33310-ff62-4716-a92c-8a7aad7e97f4> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Canada"@fr .
+
+<http://culture.gouv.qc.ca/entity/0d335ad4-019d-48fa-a98d-311e3af41b95> a <http://erlangen-crm.org/170309/E45_Address> ;
+    rdfs:label "110 Notre-Dame Street West"@fr .
+
+<http://culture.gouv.qc.ca/entity/1cff914d-f07a-443e-954d-0bd3e579a19d> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Saint-Sulpice Seminary"@fr .
+
+<http://culture.gouv.qc.ca/entity/276a98c2-a360-4a32-8d7c-e6b6e4ad7eaf> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "110"@fr .
+
+<http://culture.gouv.qc.ca/entity/50ed3bbb-f134-4297-a01e-70011da5d915> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Quebec"@fr .
+
+<http://culture.gouv.qc.ca/entity/816b5dcd-72df-45c6-9e75-82f1c7065b33> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "corner"@fr .
+
+<http://culture.gouv.qc.ca/entity/819325c8-81b7-4686-b947-7439945c7ef6> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Saint Sulpice Street"@fr .
+
+<http://culture.gouv.qc.ca/entity/93778cd9-9e14-4c7f-9a8e-db31aa48d4db> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "square"@fr .
+
+<http://culture.gouv.qc.ca/entity/9830d4dc-6f9f-4c6d-8667-f18b4b55626b> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "district"@fr .
+
+<http://culture.gouv.qc.ca/entity/b7e77871-3824-457d-b041-0f8fe79e40f6> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Old Montreal"@fr .
+
+<http://culture.gouv.qc.ca/entity/baa90cf5-4bb5-4ed6-8ee0-ac08d8b1d8c4> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "church"@fr .
+
+<http://culture.gouv.qc.ca/entity/bf897b59-f6d0-4327-a945-b22d12bb5b4e> a <http://erlangen-crm.org/170309/E53_Place> ;
+    rdfs:label "Notre-Dame Basilica"@fr .
+
+<http://culture.gouv.qc.ca/entity/e1b2d496-7a29-4581-bae6-68a693c9a50e> a <http://erlangen-crm.org/170309/E70_Thing> ;
+    rdfs:label "Place d'Armes"@fr .
+
