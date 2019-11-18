@@ -4,7 +4,6 @@ from jsonschema.exceptions import ValidationError
 from pathlib import Path
 import sys
 import yaml
-from extraction.base import Entity
 
 import translation
 import extraction
@@ -130,7 +129,7 @@ def translate_back_triples(entities, translation_config):
 
     for entity in entities:
         entity_name = translator.translate(entity.name, language_extraction, language_text)
-        translated_entities.append(Entity(entity_name, entity.entity_type, entity.start_offset, entity.end_offset))
+        translated_entities.append(extraction.Entity(entity_name, entity.entity_type, entity.start_offset, entity.end_offset))
     return translated_entities
 
 registered_entity_extractor = {
