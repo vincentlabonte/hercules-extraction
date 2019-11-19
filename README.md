@@ -85,7 +85,7 @@ There are four main component types in [HERCULES-EXTRACTION](#hercules-extractio
 
 This component type allows to translate a text from the `text-language` to the `extraction-language` and to translate it back.
 
-Any component of this type must inherite from [Translator](translation/base.py).
+Any component of this type must inherit from [Translator](translation/base.py).
 
 #### [AzureTranslator](translation/azure.py)
 
@@ -139,7 +139,7 @@ This component requires to set the `MYMEMORY_TOKEN` environment variable to a My
 
 This component type allows to extract named entities from a text.
 
-Any component of this type must inherite from [EntityExtractor](extraction/base.py).
+Any component of this type must inherit from [EntityExtractor](extraction/base.py).
 
 #### [DandelionEntityExtractor](extraction/dandelion.py)
 
@@ -175,9 +175,9 @@ Currently this component cannot be used with a [Coreference Resolver](#coreferen
 
 This component type allows to bundle coreferenced named entities together from a text.
 
-Any component of this type must inherite from [CoreferenceResolver](coreference/base.py).
+Any component of this type must inherit from [CoreferenceResolver](coreference/base.py).
 
-#### StanfordCoreferenceResolver
+#### [StanfordCoreferenceResolver](coreference/stanford.py)
 
 This coreference resolver uses a local intance of the Stanford CoreNLP server.
 To use this component, should use this configuration:
@@ -198,7 +198,7 @@ This component requires to:
 
 ##### Use an aldready started Stanford CoreNLP server
 
-If you want this coreference resolver to run multiple times, you should consider starting the server before hand so it does not need to restart the server at every step. To do so, you can use the following commands:
+If you want this coreference resolver to run multiple times, you should consider starting the server beforehand so it does not need to restart the server at every step. To do so, you can use the following commands:
 1. `cd /path/to/stanford-corenlp-full-2018-10-05`
 2. `java -mx16g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 15000`
 
@@ -220,7 +220,7 @@ The program cannot start a server at runtime. Please follow [Use an aldready sta
 
 This component type allows to export named entities in diffrent RDF format such as turtle, xml, n3, etc.
 
-Any component of this type must inherite from [Exporter](export/base.py).
+Any component of this type must inherit from [Exporter](export/base.py).
 
 #### [CIDOCCRMExporter](export/cidoc_crm.py)
 
