@@ -10,4 +10,4 @@ export:
   language: turtle
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/

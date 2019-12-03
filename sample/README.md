@@ -32,7 +32,7 @@ export:
   language: turtle
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
   
 ## [Entity extraction and export](/extraction_export)
@@ -59,7 +59,7 @@ export:
   language: turtle
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
   
 ## [Translation, entity extraction, coreference resolution and export](/translation_extraction_coreference_export)
@@ -96,7 +96,7 @@ export:
   language: turtle
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
   
 ## [Translation, entity extraction and export](/translation_extraction_export)
@@ -128,5 +128,5 @@ export:
   language: turtle
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```

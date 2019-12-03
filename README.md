@@ -50,7 +50,7 @@ export:
   language: exportation-language
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
 Where `translation` and `coreference` are optional.
 All the implementation requirements and details can be found in the [Components](#components) section.
@@ -70,7 +70,7 @@ export:
   language: turtle
   namespaces:
     entity: http://culture.gouv.qc.ca/entity/
-    ontology: http://erlangen-crm.org/170309/
+    ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
 
 ## Components
