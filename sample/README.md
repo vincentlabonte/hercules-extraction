@@ -31,7 +31,7 @@ export:
   implementation: cidoccrm
   language: turtle
   namespaces:
-    entity: http://culture.gouv.qc.ca/entity/
+    entity: http://www.hercules.gouv.qc.ca/instances/entities/
     ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
   
@@ -58,7 +58,7 @@ export:
   implementation: cidoccrm
   language: turtle
   namespaces:
-    entity: http://culture.gouv.qc.ca/entity/
+    entity: http://www.hercules.gouv.qc.ca/instances/entities/
     ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
   
@@ -95,7 +95,7 @@ export:
   implementation: cidoccrm
   language: turtle
   namespaces:
-    entity: http://culture.gouv.qc.ca/entity/
+    entity: http://www.hercules.gouv.qc.ca/instances/entities/
     ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```
   
@@ -127,6 +127,6 @@ export:
   implementation: cidoccrm
   language: turtle
   namespaces:
-    entity: http://culture.gouv.qc.ca/entity/
+    entity: http://www.hercules.gouv.qc.ca/instances/entities/
     ontology: http://www.cidoc-crm.org/cidoc-crm/
 ```

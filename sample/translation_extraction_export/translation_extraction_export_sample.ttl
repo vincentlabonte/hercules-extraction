@@ -3,84 +3,84 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://culture.gouv.qc.ca/entity/045e0d63-1532-494e-9831-1c4962e3320f> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/045e0d63-1532-494e-9831-1c4962e3320f> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "New York"@fr .
 
-<http://culture.gouv.qc.ca/entity/049b988e-5917-4d1a-ba50-3b3c0725fc7e> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/049b988e-5917-4d1a-ba50-3b3c0725fc7e> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     rdfs:label "O'Donnell James"@fr .
 
-<http://culture.gouv.qc.ca/entity/09774d21-e7c5-425f-88fb-1adcb1dda157> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/09774d21-e7c5-425f-88fb-1adcb1dda157> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     rdfs:label "gardiens"@fr .
 
-<http://culture.gouv.qc.ca/entity/1052ec04-7fb5-4d57-b5f1-9f66c90ee0f8> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/1052ec04-7fb5-4d57-b5f1-9f66c90ee0f8> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "projet de construction"@fr .
 
-<http://culture.gouv.qc.ca/entity/1a09fdc4-1405-4568-9ca0-130d7cd54859> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/1a09fdc4-1405-4568-9ca0-130d7cd54859> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     rdfs:label "Dollier de Casson"@fr .
 
-<http://culture.gouv.qc.ca/entity/22d9b47e-04e4-411a-8af9-b489dd78dc21> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/22d9b47e-04e4-411a-8af9-b489dd78dc21> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "Montréal"@fr .
 
-<http://culture.gouv.qc.ca/entity/2df30e8d-def3-4951-b4f2-7dbd1417938f> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/2df30e8d-def3-4951-b4f2-7dbd1417938f> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
     rdfs:label "notre Dame"@fr .
 
-<http://culture.gouv.qc.ca/entity/37d458a0-9a6d-4ff7-93cc-750b1940391b> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/37d458a0-9a6d-4ff7-93cc-750b1940391b> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "Eglise de Notre-Dame"@fr .
 
-<http://culture.gouv.qc.ca/entity/3c002041-73a8-4e0e-9cad-927162a04dda> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/3c002041-73a8-4e0e-9cad-927162a04dda> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "axe"@fr .
 
-<http://culture.gouv.qc.ca/entity/3f19aa6d-e1ec-4d0b-9752-1373a241fe79> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/3f19aa6d-e1ec-4d0b-9752-1373a241fe79> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
     rdfs:label "Église catholique en Amérique du Nord"@fr .
 
-<http://culture.gouv.qc.ca/entity/4cbc5e7c-bfc9-4b87-8813-73348a8eb99e> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/4cbc5e7c-bfc9-4b87-8813-73348a8eb99e> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     rdfs:label "population"@fr .
 
-<http://culture.gouv.qc.ca/entity/5a793b29-c5fb-41f8-834e-ad451c5b990b> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/5a793b29-c5fb-41f8-834e-ad451c5b990b> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "1823"@fr .
 
-<http://culture.gouv.qc.ca/entity/72981992-38eb-4f9b-940c-ceff702c06d4> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/72981992-38eb-4f9b-940c-ceff702c06d4> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "Besoins"@fr .
 
-<http://culture.gouv.qc.ca/entity/72b3eb89-9dd7-41e1-8c59-7c13369bf498> a <http://www.cidoc-crm.org/cidoc-crm/E50_Date> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/72b3eb89-9dd7-41e1-8c59-7c13369bf498> a <http://www.cidoc-crm.org/cidoc-crm/E50_Date> ;
     rdfs:label "1672"@fr .
 
-<http://culture.gouv.qc.ca/entity/7848390c-e29f-4700-94a4-c190d34608e3> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/7848390c-e29f-4700-94a4-c190d34608e3> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "projet"@fr .
 
-<http://culture.gouv.qc.ca/entity/79571bb6-d65c-4453-8b75-70a37aaf04ac> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/79571bb6-d65c-4453-8b75-70a37aaf04ac> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
     rdfs:label "paroisse"@fr .
 
-<http://culture.gouv.qc.ca/entity/7d849530-47c6-454a-a2a8-d482ccb77b01> a <http://www.cidoc-crm.org/cidoc-crm/E50_Date> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/7d849530-47c6-454a-a2a8-d482ccb77b01> a <http://www.cidoc-crm.org/cidoc-crm/E50_Date> ;
     rdfs:label "octobre 1823"@fr .
 
-<http://culture.gouv.qc.ca/entity/899e8fc1-91d3-4556-b214-af3ec39f58e1> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/899e8fc1-91d3-4556-b214-af3ec39f58e1> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "1672"@fr .
 
-<http://culture.gouv.qc.ca/entity/a06b903e-ac3f-40bc-95d4-3c2d643feb11> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/a06b903e-ac3f-40bc-95d4-3c2d643feb11> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     rdfs:label "irlandais"@fr .
 
-<http://culture.gouv.qc.ca/entity/a8bc7d91-758f-4a18-a991-bd355cc25cdb> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/a8bc7d91-758f-4a18-a991-bd355cc25cdb> a <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
     rdfs:label "église"@fr .
 
-<http://culture.gouv.qc.ca/entity/ad8c3dd4-f137-4ae7-b986-202019b679d2> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/ad8c3dd4-f137-4ae7-b986-202019b679d2> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "église"@fr .
 
-<http://culture.gouv.qc.ca/entity/d1093041-e051-4596-8d78-0286881ec289> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/d1093041-e051-4596-8d78-0286881ec289> a <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
     rdfs:label "architecte"@fr .
 
-<http://culture.gouv.qc.ca/entity/d54bd64f-6ee1-4bb1-a33a-06edf2df4df4> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/d54bd64f-6ee1-4bb1-a33a-06edf2df4df4> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "construction"@fr .
 
-<http://culture.gouv.qc.ca/entity/d6cbce2e-a9ae-4730-8e3c-cc3d0ace4656> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/d6cbce2e-a9ae-4730-8e3c-cc3d0ace4656> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "le plus grand"@fr .
 
-<http://culture.gouv.qc.ca/entity/f6c61378-1df5-4d00-a57b-1ddc48c2be6c> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/f6c61378-1df5-4d00-a57b-1ddc48c2be6c> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "usine"@fr .
 
-<http://culture.gouv.qc.ca/entity/f800cf96-b3d9-4cce-b60c-9faf6e7a0292> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/f800cf96-b3d9-4cce-b60c-9faf6e7a0292> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
     rdfs:label "Place d'Armes"@fr .
 
-<http://culture.gouv.qc.ca/entity/fb557c3e-b224-45c4-a8ee-cc090c64a035> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/fb557c3e-b224-45c4-a8ee-cc090c64a035> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "emplacement"@fr .
 
