@@ -1,4 +1,5 @@
 requests
+pyyaml
 
 # Translation
 google-cloud-translate==2.0.0

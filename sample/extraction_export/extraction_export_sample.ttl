@@ -3,45 +3,30 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://www.hercules.gouv.qc.ca/instances/entities/08691c94-129e-42ff-89ec-32c27ab868e6> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "Notre-Dame Street West"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/0bf33310-ff62-4716-a92c-8a7aad7e97f4> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/2d0db15e-2df7-4968-a6f8-24fcf2def8ba> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "Canada"@fr .
 
-<http://www.hercules.gouv.qc.ca/instances/entities/0d335ad4-019d-48fa-a98d-311e3af41b95> a <http://www.cidoc-crm.org/cidoc-crm/E45_Address> ;
-    rdfs:label "110 Notre-Dame Street West"@fr .
+<http://www.hercules.gouv.qc.ca/instances/entities/30a26a03-a109-4a24-9b0c-5005005aa8d5> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    rdfs:label "Place d'Armes"@fr .
 
-<http://www.hercules.gouv.qc.ca/instances/entities/1cff914d-f07a-443e-954d-0bd3e579a19d> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "Saint-Sulpice Seminary"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/276a98c2-a360-4a32-8d7c-e6b6e4ad7eaf> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
-    rdfs:label "110"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/50ed3bbb-f134-4297-a01e-70011da5d915> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "Quebec"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/816b5dcd-72df-45c6-9e75-82f1c7065b33> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "corner"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/819325c8-81b7-4686-b947-7439945c7ef6> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "Saint Sulpice Street"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/93778cd9-9e14-4c7f-9a8e-db31aa48d4db> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
-    rdfs:label "square"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/9830d4dc-6f9f-4c6d-8667-f18b4b55626b> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "district"@fr .
-
-<http://www.hercules.gouv.qc.ca/instances/entities/b7e77871-3824-457d-b041-0f8fe79e40f6> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/350c122f-f800-4409-b3f8-61bfcd55423d> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "Old Montreal"@fr .
 
-<http://www.hercules.gouv.qc.ca/instances/entities/baa90cf5-4bb5-4ed6-8ee0-ac08d8b1d8c4> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
-    rdfs:label "church"@fr .
+<http://www.hercules.gouv.qc.ca/instances/entities/71638ce0-6595-446f-9cb4-907ed32ec020> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+    rdfs:label "Notre-Dame Street"@fr .
 
-<http://www.hercules.gouv.qc.ca/instances/entities/bf897b59-f6d0-4327-a945-b22d12bb5b4e> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+<http://www.hercules.gouv.qc.ca/instances/entities/74b76838-395b-49f5-a179-16450e3106de> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+    rdfs:label "Saint-Sulpice Seminary"@fr .
+
+<http://www.hercules.gouv.qc.ca/instances/entities/786194ab-6e49-4633-adfc-1ed54c9272a3> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
     rdfs:label "Notre-Dame Basilica"@fr .
 
-<http://www.hercules.gouv.qc.ca/instances/entities/e1b2d496-7a29-4581-bae6-68a693c9a50e> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
-    rdfs:label "Place d'Armes"@fr .
+<http://www.hercules.gouv.qc.ca/instances/entities/83a2e551-e62e-466c-9c1c-c75afd26e2fe> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+    rdfs:label "Town square"@fr .
+
+<http://www.hercules.gouv.qc.ca/instances/entities/e9278ef1-6a78-4f3e-9f8b-cea58cab3dbe> a <http://www.cidoc-crm.org/cidoc-crm/E70_Thing> ;
+    rdfs:label "Historic district"@fr .
+
+<http://www.hercules.gouv.qc.ca/instances/entities/fc626274-765d-4f2b-bbda-7b8ef1aadc5b> a <http://www.cidoc-crm.org/cidoc-crm/E53_Place> ;
+    rdfs:label "Montreal"@fr .
 

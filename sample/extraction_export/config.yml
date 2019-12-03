@@ -1,5 +1,5 @@
 extraction:
-  implementation: google
+  implementation: dandelion
 export:
   implementation: cidoccrm
   language: turtle

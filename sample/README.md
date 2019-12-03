@@ -39,8 +39,8 @@ export:
 
 ### Components
 
-- **Translator**: GoogleCloudTranslator
-- **Entity Extractor**: None
+- **Translator**: None
+- **Entity Extractor**: DandelionEntityExtractor
 - **Coreference Resolver**: None
 - **Exporter**: CIDOCCRMExporter
 
@@ -53,7 +53,7 @@ export:
 
 ```YAML
 extraction:
-  implementation: google
+  implementation: dandelion
 export:
   implementation: cidoccrm
   language: turtle
